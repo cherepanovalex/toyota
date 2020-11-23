@@ -53,13 +53,7 @@
     display: inline-block;
 }
 
-@media (min-width: 320px ) and (max-width: 414px) {
-    .scroll-icon-controls{
-        text-align: center;
-        display: block;
-        margin-bottom: 30px;
-    }
-}
+
 
 
 
@@ -71,10 +65,7 @@
 
     .vk-promo{
         margin: 0;
-        padding: 30px 0 0 0;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        padding: 0;
     }
 
     .vk-promo  .title{
@@ -87,6 +78,24 @@
         height: 90%;
     }
 
+}
+
+@media (min-width: 320px ) and (max-width: 414px) {
+    .scroll-icon-controls{
+        text-align: center;
+        display: block;
+        padding-top: 30px;
+    }
+    .vk-promo{
+        padding: 30% 0 0 0;
+    }
+}
+
+@media (min-width: 768px ) and (max-width: 1024px){
+    .vk-promo{
+        display: flex;
+        align-items: center;
+    }
 }
 
 
