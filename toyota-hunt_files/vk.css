@@ -43,13 +43,24 @@
     color: #78150d;
 }
 
-.scroll-icon {
+
+.scroll-icon-controls{
     display: none;
-    position: absolute;
-    bottom: 90px;
-    left: 50%;
-    transform: translateX(-50%);
 }
+
+.scroll-icon-controls img{
+    position: static;
+    display: inline-block;
+}
+
+@media (min-width: 320px ) and (max-width: 414px) {
+    .scroll-icon-controls{
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+
 
 
 @media (min-width: 320px ) and (max-width: 767px) {
@@ -61,6 +72,9 @@
     .vk-promo{
         margin: 0;
         padding: 30px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     .vk-promo  .title{
