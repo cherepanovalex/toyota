@@ -15,12 +15,13 @@
 
 .movie-container{
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 50%;
     height: 0;
     overflow: hidden;
     display: block;
     margin: 0 auto;
     max-width: 1000px;
+    width: 100%;
 }
 
 .movie-container iframe,
@@ -30,7 +31,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 70%;
+    height: 100%;
     border: 2px solid #ffffff;
     border-radius: 2px;
 }
@@ -54,10 +55,44 @@
 }
 
 
+.tab-pane .vk-promo{
+    height: auto;
+    padding: 30px 0 0 0;
+    background: none;
+    min-height: auto;
+}
 
+.tab-pane .vk-promo  .title{
+    margin-bottom: 30px;
+}
+
+.movie-wrapper{
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    width: 100%;
+}
+
+/*.cabinet-pane {*/
+/*    min-height: auto;*/
+/*}*/
+
+/*.cabinet-controls{*/
+/*    padding: 20px 0 0 0;*/
+/*}*/
+
+@media (max-width: 767px) {
+    .cabinet-pane {
+        min-height: 25.625rem;
+        width: 24.625rem;
+    }
+}
 
 
 @media (min-width: 320px ) and (max-width: 767px) {
+
+    .vk-promo .block-table{
+        height: 100vh;
+    }
 
     .scroll-icon{
         display: block;
@@ -78,7 +113,63 @@
         height: 90%;
     }
 
+
+
+    .cabinet-tabs ul {
+        width: 350px;
+        margin: 0 auto !important;
+        overflow-x: scroll;
+        display: flex;
+        position: relative;
+    }
+
+
+    .cabinet-tabs ul li{
+        white-space: nowrap;
+    }
+
+    .tabs-line-menu{
+        position: relative;
+        width: 350px;
+        padding: 10px 0 0 0;
+        margin: 0 auto;
+    }
+
+    .tabs-line-menu:before{
+        background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 39%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 39%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 39%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        z-index: 2;
+        right: -1px;
+        bottom:3px;
+        height: 20px;
+        width: 30px;
+        content: "";
+        position: absolute;
+    }
+
+    .tab-pane .vk-promo  .title{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
 }
+
+@media (min-width: 320px ) and (max-width: 360px) {
+    .cabinet-tabs ul {
+        width: 300px;
+        margin: 0 auto !important;
+        overflow-x: scroll;
+        display: flex;
+    }
+    .tabs-line-menu{
+        position: relative;
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
 
 @media (min-width: 320px ) and (max-width: 414px) {
     .scroll-icon-controls{
@@ -86,15 +177,16 @@
         display: block;
         padding-top: 30px;
     }
-    .vk-promo{
-        padding: 30% 0 0 0;
-    }
+    /*.vk-promo{*/
+    /*    padding: 30% 0 0 0;*/
+    /*}*/
 }
 
 @media (min-width: 768px ) and (max-width: 1024px){
     .vk-promo{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 }
 
