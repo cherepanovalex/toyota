@@ -2,7 +2,7 @@
     box-shadow: 0 0 32.68px 5.32px rgba(0, 0, 0, .1);
 }*/
 
-.vk-promo{
+.vk-promo {
     height: 100vh;
     justify-content: center;
     background: url(promo-top.png) center bottom no-repeat;
@@ -11,9 +11,11 @@
     min-height: 560px;
     position: relative;
     z-index: 3;
+    -webkit-box-shadow: 0 0 65px 0 rgba(0, 0, 0, .25);
+    box-shadow: 0 0 65px 0 rgba(0, 0, 0, .25);
 }
 
-.movie-container{
+.movie-container {
     position: relative;
     padding-bottom: 50%;
     height: 0;
@@ -36,7 +38,7 @@
     border-radius: 2px;
 }
 
-.vk-promo .title{
+.vk-promo .title {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
@@ -45,28 +47,28 @@
 }
 
 
-.scroll-icon-controls{
+.scroll-icon-controls {
     display: none;
 }
 
-.scroll-icon-controls img{
+.scroll-icon-controls img {
     position: static;
     display: inline-block;
 }
 
 
-.tab-pane .vk-promo{
+.tab-pane .vk-promo {
     height: auto;
     padding: 30px 0 0 0;
     background: none;
     min-height: auto;
 }
 
-.tab-pane .vk-promo  .title{
+.tab-pane .vk-promo .title {
     margin-bottom: 30px;
 }
 
-.movie-wrapper{
+.movie-wrapper {
     max-width: 900px;
     margin: 0 auto 20px auto;
     width: 100%;
@@ -91,26 +93,41 @@
 @media (min-width: 320px ) and (max-width: 767px) {
 
 
+    .block-table {
+        height: auto !important;
+        padding: 20px 0;
+        min-height: auto !important;
+        max-height: none !important;
+    }
 
-    .scroll-icon{
+    .s--tournament {
+        min-height: auto;
+        padding: 20px 0;
+        margin-bottom: 60px;
+    }
+
+    .s--tournament > .container {
         display: block;
     }
 
-    .vk-promo{
-        margin: 0;
-        padding: 20px 0;
-        min-height: auto;
-        height: auto;
-        -webkit-box-shadow: 0 0 65px 0 rgba(0, 0, 0, .25);
-        box-shadow: 0 0 65px 0 rgba(0, 0, 0, .25);
-        z-index: 1;
+    .scroll-icon {
+        display: block;
     }
 
-    .vk-promo  .title{
+    .vk-promo {
+        margin: 0;
+        padding: 40px 0 30px;
+        min-height: auto;
+        height: auto;
+        /* -webkit-box-shadow: 0 0 65px 0 rgba(0, 0, 0, .25);
+         box-shadow: 0 0 65px 0 rgba(0, 0, 0, .25);
+         z-index: 1;*/
+    }
+
+    .vk-promo .title {
         font-size: 22px;
         line-height: 26px;
     }
-
 
 
     .cabinet-tabs ul {
@@ -122,32 +139,32 @@
     }
 
 
-    .cabinet-tabs ul li{
+    .cabinet-tabs ul li {
         white-space: nowrap;
     }
 
-    .tabs-line-menu{
+    .tabs-line-menu {
         position: relative;
         width: 350px;
         padding: 10px 0 0 0;
         margin: 0 auto;
     }
 
-    .tabs-line-menu:before{
-        background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 39%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 39%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 39%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    .tabs-line-menu:before {
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 39%, rgba(255, 255, 255, 1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 39%, rgba(255, 255, 255, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 39%, rgba(255, 255, 255, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1); /* IE6-9 */
         z-index: 2;
         right: -1px;
-        bottom:3px;
+        bottom: 3px;
         height: 20px;
         width: 30px;
         content: "";
         position: absolute;
     }
 
-    .tab-pane .vk-promo  .title{
+    .tab-pane .vk-promo .title {
         font-size: 18px;
         line-height: 22px;
     }
@@ -161,7 +178,8 @@
         overflow-x: scroll;
         display: flex;
     }
-    .tabs-line-menu{
+
+    .tabs-line-menu {
         position: relative;
         width: 300px;
         margin: 0 auto;
@@ -170,21 +188,23 @@
 
 
 @media (min-width: 320px ) and (max-width: 414px) {
-    .scroll-icon-controls{
+    .scroll-icon-controls {
         text-align: center;
         display: block;
         padding-top: 30px;
     }
+
     /*.vk-promo{*/
     /*    padding: 30% 0 0 0;*/
     /*}*/
 }
 
-@media (min-width: 768px ) and (max-width: 1024px){
-    .vk-promo{
+@media (min-width: 768px ) and (max-width: 1024px) {
+    .vk-promo {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        padding-bottom: 130px;
     }
 }
 
