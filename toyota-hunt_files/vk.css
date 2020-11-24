@@ -75,13 +75,7 @@
     width: 100%;
 }
 
-/*.cabinet-pane {*/
-/*    min-height: auto;*/
-/*}*/
 
-/*.cabinet-controls{*/
-/*    padding: 20px 0 0 0;*/
-/*}*/
 
 @media (max-width: 767px) {
     .cabinet-pane {
